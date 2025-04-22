@@ -19,7 +19,7 @@ const Hero = () => {
         <div className="flex gap-3.5 pt-10 max-sm:justify-center pb-5">
           <button
             type="submit"
-            className="rounded-[100px] bg-white w-[150px] h-[48px]  text-[#00F2FE] font-bold cursor-pointer hover:text-white hover:bg-[#29E0FF] duration-300"
+            className="rounded-[100px] bg-white w-[150px] h-[48px]  text-[#00F2FE] font-bold cursor-pointer hover:text-white hover:bg-[#00F2FE] duration-300"
           >
             Get Started
           </button>
@@ -38,5 +38,4 @@ const Hero = () => {
     </div>
   );
 };
-
 export default Hero;

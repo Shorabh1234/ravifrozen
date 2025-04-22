@@ -61,7 +61,7 @@ const Navbar = () => {
             {navLinks.map((link, index) => (
               <Link
                 key={index}
-                className="hover:text-[#29E0FF] duration-500 leading-[120%] capitalize font-medium text-lg"
+                className=" leading-[120%] capitalize font-medium text-lg"
                 onClick={() => setIsSidebarOpen(false)}
                 href="#"
               >
@@ -101,7 +101,7 @@ const Navbar = () => {
             {navLinks.map((link, index) => (
               <Link
                 key={index}
-                className="hover:scale-[2] leading-[120%] capitalize font-medium text-lg"
+                className=" leading-[120%] capitalize font-medium text-lg"
                 onClick={closeSidebar}
                 href="#"
               >
