@@ -2,10 +2,6 @@
 
 @import "tailwindcss";
 
-:root {
-  --fs-sm: 18px;
-}
-
 body {
   font-family: "Raleway", sans-serif;
 }

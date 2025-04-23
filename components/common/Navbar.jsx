@@ -42,15 +42,15 @@ const Navbar = () => {
     };
   }, [isSidebarOpen]);
 
-  return (
+  return ( 
     <nav className="w-full ">
-      <div className=" px-4 relative">
-        <div className="max-w-[1242px] w-full flex justify-between mx-auto h-[80px] lg:h-[100px] items-center">
+      <div className=" px-2 relative">
+        <div className="max-w-[1300px] px-2 w-full flex justify-between mx-auto h-[80px] lg:h-[100px] items-center">
           <Link href="/" className="flex items-center">
             <Image
-              src="/img/ravi_logo.png"
+              src="/img/logo.png"
               alt="Logo"
-              className="max-w-[176px] w-full h-[74px]"
+              className="max-w-[176px] w-full h-[74px] max-md:w-[120px] max-md:h-[55px]"
               width={176}
               height={74}
               unoptimized
@@ -69,7 +69,7 @@ const Navbar = () => {
               </Link>
             ))}
           </div>
-          <button className=" bg-white hidden md:flex h-[40px] lg:h-[48px] justify-center items-center rounded-4xl w-[165px] lg:w-[175px] transition-all cursor-pointer text-[#29E0FF] text-center text-base font-bold leading-[120%] z-10 border border-white relative hover:bg-[#29E0FF] hover:text-white duration-700">
+          <button className=" bg-white hidden md:flex h-[40px] lg:h-[48px] justify-center items-center rounded-4xl w-[165px] lg:w-[175px] transition-all cursor-pointer text-[#29E0FF] text-center text-base font-bold leading-[120%] z-10 border border-white relative hover:bg-transparent hover:text-white duration-700">
             Customer Login
           </button>
 
@@ -98,6 +98,14 @@ const Navbar = () => {
           </p>
 
           <div className="text-white flex flex-col gap-[30px] items-center px-3 ">
+            <Image
+              src="/img/logo.png"
+              alt="Logo"
+              className="max-w-[176px] w-full h-[74px] max-md:w-[120px] max-md:h-[55px]"
+              width={176}
+              height={74}
+              unoptimized
+            />
             {navLinks.map((link, index) => (
               <Link
                 key={index}
@@ -108,10 +116,13 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-
             <button
               onClick={closeSidebar}
-              className=" bg-white flex  h-[40px] lg:h-[48px] justify-center items-center rounded-4xl w-[150px] transition-all cursor-pointer text-[#29E0FF] text-center text-base font-bold leading-[120%] z-10 border border-white relative hover:bg-[#29E0FF] hover:text-white max-[320px]:h-[40px] duration-700"
+              className=" bg-white flex   h-[40px] lg:h-[48px] justify-center items-center rounded-4xl w-[150px] transition-all cursor-pointer 
+text-[#29E0FF] 
+
+
+ text-center text-base font-bold leading-[120%] z-10 border border-white relative   max-[320px]:h-[40px] duration-700"
             >
               Customer Login
             </button>
@@ -121,5 +132,4 @@ const Navbar = () => {
     </nav>
   );
 };
-
 export default Navbar;
